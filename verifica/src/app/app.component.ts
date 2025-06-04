@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Macchine } from './models/driving.model';
 import { DrivingListComponent } from './driving-list/driving-list.component';
+import { RentModel } from './models/rent.model';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ export class AppComponent implements OnInit {
   obs! : Observable<Macchine[]>
   http : HttpClient
   vettMacchine : Macchine[] = []
+  vettMacch : RentModel[] = []
 
   constructor(http : HttpClient){this.http = http}
 

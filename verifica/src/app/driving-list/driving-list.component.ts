@@ -11,7 +11,7 @@ import { Macchine } from '../models/driving.model';
 export class DrivingListComponent {
   @Input() macchina! : Macchine
 
-  aggiungi(){
-    console.log(" Titolo: " + this.macchina.tipo + " Descrizione: " + this.macchina.descrizione + " Tariffa: " + this.macchina.tariffa + " Valutazione Media: " + this.macchina.valutazionemedia)
+  aggiungi(nNoleggio : HTMLInputElement){
+    console.log(" Titolo: " + this.macchina.tipo + " Descrizione: " + this.macchina.descrizione + " Tariffa: " + this.macchina.tariffa + " Valutazione Media: " + this.macchina.valutazionemedia + " Numero noleggi: " + nNoleggio.value)
   }
 }
