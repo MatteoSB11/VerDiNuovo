@@ -6,11 +6,12 @@ import { Macchine } from './models/driving.model';
 import { DrivingListComponent } from './driving-list/driving-list.component';
 import { RentModel } from './models/rent.model';
 import { RentedComponent } from './rented/rented.component';
+import { RentListComponent } from './rent-list/rent-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, DrivingListComponent, RentedComponent],
+  imports: [RouterOutlet, DrivingListComponent, RentedComponent, RentListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
