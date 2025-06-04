@@ -5,11 +5,12 @@ import { Observable } from 'rxjs';
 import { Macchine } from './models/driving.model';
 import { DrivingListComponent } from './driving-list/driving-list.component';
 import { RentModel } from './models/rent.model';
+import { RentedComponent } from './rented/rented.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, DrivingListComponent],
+  imports: [RouterOutlet, DrivingListComponent, RentedComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
